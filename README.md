@@ -19,11 +19,11 @@ Now will you have something like this:
 
 # Commands
 
-Now, type the following command: slmgr.vbs /upk Now it will give an message, click on OK
+Now, type the following command: `slmgr.vbs /upk` Now it will give an message, click on OK
 
 And now this command: `slmgr.vbs /cpky` It will give an message once again, and click on OK again
 
-And now type this command: slmgr.vbs /ckms Once again click on OK when you get an message
+And now type this command: `slmgr.vbs /ckms` Once again click on OK when you get an message
 
 # Edition upgradable check command
 
@@ -33,13 +33,13 @@ Now we are gonna check of your edition is supported to upgrade to Pro, run the f
 
 Now, copy and paste this complete command:
 
-sc config LicenseManager start= auto & net start LicenseManager
+`sc config LicenseManager start= auto & net start LicenseManager`
 
-sc config wuauserv start= auto & net start wuauserv
+`sc config wuauserv start= auto & net start wuauserv`
 
-changepk.exe /productkey VK7JG-NPHTM-C97JM-9MPGT-3V66T
+`changepk.exe /productkey VK7JG-NPHTM-C97JM-9MPGT-3V66T`
 
-exit
+`exit`
 
 It will run an installer and you will see an message:"% complete"
 
@@ -73,10 +73,10 @@ Now you will get an Command Prompt.
 
 Type the following commands one for one to activate:
 
-slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+`slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX`
 
-slmgr /skms kms8.msguides.com
+`slmgr /skms kms8.msguides.com`
 
-slmgr /ato
+`slmgr /ato`
 
 Now you have Windows 11 Pro and it activated! You can check settings to see it.
