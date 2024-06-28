@@ -21,7 +21,7 @@ Now will you have something like this:
 
 Now, type the following command: slmgr.vbs /upk Now it will give an message, click on OK
 
-And now this command: slmgr.vbs /cpky It will give an message once again, and click on OK again
+And now this command: `slmgr.vbs /cpky` It will give an message once again, and click on OK again
 
 And now type this command: slmgr.vbs /ckms Once again click on OK when you get an message
 
