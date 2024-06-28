@@ -1,7 +1,7 @@
 # Windows 11 Pro productkey activation
 Activation Windows 11 Pro product key with CMD
 # Get Started
-Open Comman Promote as adminstrator in your Windows 11 by using this command
+Open Comman Promote as **adminstrator** in your Windows 11 by using this command
 
 Windows-logo-key + R      
 
@@ -27,7 +27,7 @@ And now type this command: `slmgr.vbs /ckms` Once again click on OK when you get
 
 # Edition upgradable check command
 
-Now we are gonna check of your edition is supported to upgrade to Pro, run the following command to check this: DISM /online /Get-TargetEditions If you see "Professional" in the list, then you can upgrade your Windows edition to Pro for free!
+Now we are gonna check of your edition is supported to upgrade to Pro, run the following command to check this: `DISM /online /Get-TargetEditions` If you see "Professional" in the list, then you can upgrade your Windows edition to Pro for free!
 
 # Run Pro installer
 
@@ -79,4 +79,4 @@ Type the following commands one for one to activate:
 
 `slmgr /ato`
 
-Now you have Windows 11 Pro and it activated! You can check settings to see it.
+Now you have Windows 11 Pro and it *activated*! You can check settings to see it. 
