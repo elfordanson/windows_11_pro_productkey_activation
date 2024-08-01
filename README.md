@@ -80,3 +80,4 @@ Type the following commands one for one to activate:
 `slmgr /ato`
 
 Now you have Windows 11 Pro and it *activated*! You can check settings to see it. 
+*Give a star and follow me for guides*
