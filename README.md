@@ -13,7 +13,7 @@ Press ctrl+shift+enter
 
 Then Click "YES"
 
-Now will you have something like this:
+Now you will have something like this:
 
 ![image](https://github.com/elfordanson/windows_11_pro_productkey_activation/assets/116512676/e322f8ce-f447-4179-9a6d-afc2d301ae94)
 
@@ -80,4 +80,4 @@ Type the following commands one for one to activate:
 `slmgr /ato`
 
 Now you have Windows 11 Pro and it *activated*! You can check settings to see it. 
-*Give a star and follow me for guides*
+*Give a star and follow me for more guides. Thanks for 200 stars*
