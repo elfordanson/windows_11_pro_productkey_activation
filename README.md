@@ -13,6 +13,9 @@ Open **Command Prompt as Administrator** by following these steps:
 
 You should now see an elevated Command Prompt window.
 
+<img width="1365" height="767" alt="Screenshot 2026-05-15 213242" src="https://github.com/user-attachments/assets/9b079e01-caef-4ed0-8d14-0087e9658fba" />
+
+
 ## Step 1 — Clear Existing License Data
 
 Run the following commands one at a time, clicking **OK** after each prompt:
