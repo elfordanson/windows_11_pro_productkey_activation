@@ -1,83 +1,98 @@
-# Windows 11 Pro productkey activation
-Activation Windows 11 Pro product key with CMD
-# Get Started
-Open Comman Promote as **adminstrator** in your Windows 11 by using this command
+# Windows 11 Pro Product Key Activation
 
-Windows-logo-key + R      
+Activate Windows 11 Pro using CMD — no third-party tools required.
 
-Now Type "cmd.exe" in the box
+---
 
-![image](https://github.com/elfordanson/windows_11_pro_productkey_activation/assets/116512676/0483880c-43c7-4144-81d6-bc781906aca0) 
+## Getting Started
 
-Press ctrl+shift+enter
+Open **Command Prompt as Administrator** by following these steps:
 
-Then Click "YES"
+1. Press **Windows key + R** to open the Run dialog.
+2. Type `cmd.exe` in the box.
+3. Press **Ctrl + Shift + Enter** to run it as Administrator.
+4. Click **Yes** when prompted by User Account Control.
 
-Now you will have something like this:
+You should now see an elevated Command Prompt window.
 
-![image](https://github.com/elfordanson/windows_11_pro_productkey_activation/assets/116512676/e322f8ce-f447-4179-9a6d-afc2d301ae94)
+---
 
-# Commands
+## Step 1 — Clear Existing License Data
 
-Now, type the following command: `slmgr.vbs /upk` Now it will give an message, click on OK
+Run the following commands one at a time, clicking **OK** after each prompt:
 
-And now this command: `slmgr.vbs /cpky` It will give an message once again, and click on OK again
+```
+slmgr.vbs /upk
+slmgr.vbs /cpky
+slmgr.vbs /ckms
+```
 
-And now type this command: `slmgr.vbs /ckms` Once again click on OK when you get an message
+These commands uninstall the current product key, clear it from the registry, and remove any configured KMS server.
 
-# Edition upgradable check command
+---
 
-Now we are gonna check of your edition is supported to upgrade to Pro, run the following command to check this: `DISM /online /Get-TargetEditions` If you see "Professional" in the list, then you can upgrade your Windows edition to Pro for free!
+## Step 2 — Check Edition Upgrade Eligibility
 
-# Run Pro installer
+Before proceeding, verify that your current Windows edition supports upgrading to Pro:
 
-Now, copy and paste this complete command:
+```
+DISM /online /Get-TargetEditions
+```
 
-`sc config LicenseManager start= auto & net start LicenseManager`
+If **Professional** appears in the list, your device is eligible for a free edition upgrade.
 
-`sc config wuauserv start= auto & net start wuauserv`
+---
 
-`changepk.exe /productkey VK7JG-NPHTM-C97JM-9MPGT-3V66T`
+## Step 3 — Run the Pro Installer
 
-`exit`
+Copy and paste the following commands into the Command Prompt:
 
-It will run an installer and you will see an message:"% complete"
+```
+sc config LicenseManager start= auto & net start LicenseManager
+sc config wuauserv start= auto & net start wuauserv
+changepk.exe /productkey VK7JG-NPHTM-C97JM-9MPGT-3V66T
+exit
+```
 
-Now wait until it's 100% and it's not weird that you will get an error
+Windows will begin the upgrade process and display a progress percentage. This may take a few minutes. If an error appears once it reaches 100%, simply click **Exit** — this is expected behavior.
 
-When you get the error, just click Exit and then reboot your pc.
+Restart your PC. Windows will install the necessary updates and features during reboot. Once complete, go to **Settings → System → About** to confirm that **Windows 11 Pro** is now installed.
 
-You will now see an message that he is running updates and is installing features, just wait until its done and check "info" in settings, You will see that Windows 11 Pro is installed!
+> ⚠️ You may notice that Windows is not yet activated and that some settings are restricted. The next step addresses that.
 
-But we are not done, You will see that it isn't activated and that you can't change some settings, now we are gonna fix that!
+---
 
-# Activating Windows Pro
+## Step 4 — Activate Windows 11 Pro
 
-Now we are gonna run some other commands to activate Windows 11 Pro
+Open an elevated Command Prompt again (repeat the steps from the Getting Started section), then run the following commands one at a time:
 
-Press these keyboard keys once again:
+```
+slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+slmgr /skms kms8.msguides.com
+slmgr /ato
+```
 
-Windows-logo key+R
+Once all three commands complete successfully, Windows 11 Pro will be fully activated. You can verify this under **Settings → System → About**.
 
-It looks like this again:
+---
 
-![image](https://github.com/elfordanson/windows_11_pro_productkey_activation/assets/116512676/0483880c-43c7-4144-81d6-bc781906aca0) 
+## Troubleshooting
 
-Run Dialog With cmd.exe Text In It
+| Issue | Fix |
+|---|---|
+| Error at 100% during installer | Expected — just click Exit and reboot |
+| Activation fails after Step 4 | Wait a few minutes and run `slmgr /ato` again |
+| "Professional" not in DISM list | Your edition may not support upgrading to Pro |
+| Command Prompt won't open as Admin | Make sure you press Ctrl + Shift + Enter, not just Enter |
 
-Press ctrl+shift+enter
+---
 
-You will get an message, just click on Yes
+## Notes
 
-Now you will get an Command Prompt.
+- This guide uses a KMS activation method via `kms8.msguides.com`.
+- An active internet connection is required for Step 4.
+- If you reinstall Windows, you may need to repeat Step 4.
 
-Type the following commands one for one to activate:
+---
 
-`slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX`
-
-`slmgr /skms kms8.msguides.com`
-
-`slmgr /ato`
-
-Now you have Windows 11 Pro and it *activated*! You can check settings to see it. 
-*Give a star and follow me for more guides. Thanks for 200 stars*
+*If this guide helped you, consider leaving a ⭐ on the repository. Thanks for 200+ stars!*
