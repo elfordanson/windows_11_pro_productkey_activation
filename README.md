@@ -2,7 +2,7 @@
 
 Activate Windows 11 Pro using CMD — no third-party tools required.
 
-## Getting Started
+# Getting Started
 
 Open **Command Prompt as Administrator** by following these steps:
 
@@ -16,7 +16,7 @@ You should now see an elevated Command Prompt window.
 <img width="1365" height="767" alt="Screenshot 2026-05-15 213242" src="https://github.com/user-attachments/assets/9b079e01-caef-4ed0-8d14-0087e9658fba" />
 
 
-## Step 1 — Clear Existing License Data
+# Step 1 — Clear Existing License Data
 
 Run the following commands one at a time, clicking **OK** after each prompt:
 
@@ -28,7 +28,7 @@ slmgr.vbs /ckms
 
 These commands uninstall the current product key, clear it from the registry, and remove any configured KMS server.
 
-## Step 2 — Check Edition Upgrade Eligibility
+# Step 2 — Check Edition Upgrade Eligibility
 
 Before proceeding, verify that your current Windows edition supports upgrading to Pro:
 
@@ -38,7 +38,7 @@ DISM /online /Get-TargetEditions
 
 If **Professional** appears in the list, your device is eligible for a free edition upgrade.
 
-## Step 3 — Run the Pro Installer
+# Step 3 — Run the Pro Installer
 
 Copy and paste the following commands into the Command Prompt:
 
@@ -60,7 +60,7 @@ Once complete, go to **Settings → System → About** to confirm that **Windows
 > [!NOTE]
 > You may notice that Windows is not yet activated and that some settings are restricted. The next step addresses that.
 
-## Step 4 — Activate Windows 11 Pro
+# Step 4 — Activate Windows 11 Pro
 
 Open an elevated Command Prompt again (repeat the steps from the Getting Started section), then run the following commands one at a time:
 
@@ -74,7 +74,7 @@ Once all three commands complete successfully, Windows 11 Pro will be fully acti
 
 You can verify this under **Settings → System → About**.
 
-## Notes
+# Notes
 
 - This guide uses a KMS activation method via `kms8.msguides.com`.
 - An active internet connection is required for Step 4.
