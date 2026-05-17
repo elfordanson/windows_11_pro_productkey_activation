@@ -57,7 +57,7 @@ Restart your PC. Windows will install the necessary updates and features during 
 
 Once complete, go to **Settings → System → About** to confirm that **Windows 11 Pro** is now installed.
 
-> [!NOTE]
+> [!IMPORTANT]
 > You may notice that Windows is not yet activated and that some settings are restricted. The next step addresses that.
 
 # Step 4 — Activate Windows 11 Pro
